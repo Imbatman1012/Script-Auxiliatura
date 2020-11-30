@@ -19,35 +19,58 @@
 		<div class="Ejercicios">
 			<input type="Text" id="Eje1" name="">
 			<button id="btn">Calcular</button>
-			<h3 id="mayor"></h3>
-			<h3 id="menor"></h3>
-			<h3 id="moda"></h3>
+			<h3 id="mayor1">Mayor</h3>
+			<h3 id="menor1">Menor</h3>
+			<h3 id="moda1">Moda</h3>
 			<script type="text/javascript">
-				function moda()
+				
+				/*function moda()
 				{
-					var vec =[]/*
+					var vec =[]
 					var mayor = 0;
 					var menor = 0;
-					var moda = 0;*/
-					vec[x]= parseInt(document.getElementsById('Eje1').value);
-					/*var longitud = console.log(vec[x].length);*/
-					var mayor = vec[1];
-					var menor = vec[1];
-					var moda = vec[1];
+					var moda = 0;
+					vec[x]= parseInt(document.getElementById('Eje1').value);
+					//var longitud = console.log(vec[x].length);
+					var mayor = vec[0];
+					var menor = vec[0];
+					var moda = vec[0];
 					for (var i = 1; i < vec.length; i++) 
 					{
 						if (mayor < vec[i]) 
 						{
 							mayor =vec[i];
-						}if (menor > vec[i]){
-							menor =  vec[i]
+						}
+						if (menor > vec[i])
+						{
+							menor =  vec[i];
+						}
 					}
-					document.getElementsById('mayor').innerHTML = mayor;
-					document.getElementsById('menor').innerHTML = mayor;
+					document.getElementById("mayor1").innerHTML = mayor;
+					document.getElementById("menor1").innerHTML = menor;
+					document.write(mayor);
+				}*/
+				/*var btnn=document.getElementById('btn');				  
+				btnn.addEventListener('click',moda);*/
+				var vec =[];	
+				vec[x]=parseInt(prompt('Ingrese un numero'));
+					//var longitud = console.log(vec[x].length);
+				var mayor = vec[0];
+				var menor = vec[0];
+				var moda = vec[0];
+				for (var i = 1; i < vec.length; i++) 
+				{
+					if (mayor < vec[i]) 
+					{
+						mayor =vec[i];
+					}
+					if (menor > vec[i])
+					{
+						menor =  vec[i];
+					}
 				}
-				var btnn = document.getElementsById('btn');
-				btnn.addEventListener('click', moda)
-
+				document.write(mayor);
+				document.write(menor);
 			</script>
 		</div>		
 	</div>
