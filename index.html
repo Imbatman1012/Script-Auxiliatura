@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ejercicios Auxi</title>
+	<title>Practica Auxiliatura</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="">
 </head>
@@ -19,8 +19,35 @@
 		<div class="Ejercicios">
 			<input type="Text" id="Eje1" name="">
 			<button id="btn">Calcular</button>
+			<h3 id="mayor"></h3>
+			<h3 id="menor"></h3>
+			<h3 id="moda"></h3>
 			<script type="text/javascript">
-				function 
+				function moda()
+				{
+					var vec =[]/*
+					var mayor = 0;
+					var menor = 0;
+					var moda = 0;*/
+					vec[x]= parseInt(document.getElementsById('Eje1').value);
+					/*var longitud = console.log(vec[x].length);*/
+					var mayor = vec[1];
+					var menor = vec[1];
+					var moda = vec[1];
+					for (var i = 1; i < vec.length; i++) 
+					{
+						if (mayor < vec[i]) 
+						{
+							mayor =vec[i];
+						}if (menor > vec[i]){
+							menor =  vec[i]
+					}
+					document.getElementsById('mayor').innerHTML = mayor;
+					document.getElementsById('menor').innerHTML = mayor;
+				}
+				var btnn = document.getElementsById('btn');
+				btnn.addEventListener('click', moda)
+
 			</script>
 		</div>		
 	</div>
